@@ -1,0 +1,8 @@
+#ballon {
+	position: relative;
+	left: 0px;
+}
+
+#cadre {
+	border: 1px solid black;
+}

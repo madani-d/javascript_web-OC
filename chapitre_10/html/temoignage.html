@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Témoignage sur le cours</title>
+</head>
+
+<body>
+    <h1>Ajouter un témoignage</h1>
+    <form>
+        <p>
+        <label for="pseudo">Pseudo</label> :
+        <input type="text" name="pseudo" id="pseudo">
+        <br>
+        <p>
+        Ce cours était :
+        <br>
+        <input type="radio" name="evaluation" id="5" value="5">
+        <label for="5">Génial !</label>
+        <br>
+        <input type="radio" name="evaluation" id="4" value="4">
+        <label for="4">Trés bien</label>
+        <br>
+        <input type="radio" name="evaluation" id="3" value="3">
+        <label for="3">Pas mal</label>  
+        <br>
+        <input type="radio" name="evaluation" id="2" value="2">
+        <label for="2">Bof</label>
+        <br>
+        <input type="radio" name="evaluation" id="1" value="1">
+        <label for="1">Nul</label>
+        </p>
+        <br>
+        <label for="message">Ajoutez un message</label> :
+        <br>
+        <textarea name="message" id="message" cols="20" rows="5"></textarea>
+        </p>
+        <input type="submit" value="Envoyer">
+    </form>   
+    <div id="valide"></div> 
+</body>
+
+    <script src="../js/ajax.js"></script>
+    <script src="../js/temoignage.js"></script>
+</html>

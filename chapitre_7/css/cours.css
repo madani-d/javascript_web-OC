@@ -1,0 +1,26 @@
+#cadre {
+	border: 1px solid red;
+}
+
+#bloc {
+	width: 20px;
+	height: 40px;
+	background: red;
+	position: relative;;
+	left: 0px;
+	margin-left: -20px; /* simplifie le calcul des positions initiale et finale du bloc */
+	animation-name: deplacerBloc; /* nom de l'animation */
+	animation-duration: 6s; /* durée de l'aniamtion */
+	animation-fill-mode: forwards; /* laisse le bloc dans sa position finale */
+}
+
+@keyframes deplacerBloc {
+	from {
+		/* position initiale : bord gauche du cadre (en tenant compte de la marge négative) */
+		left: 20px;
+	}
+	to {
+		/* position finale : bord droit du cadre (en tenant compte de la marge négative) */
+		left: 100%;
+	}
+}
